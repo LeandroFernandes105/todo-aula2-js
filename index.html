@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="todo-container">
+        <header><h1>Todo Lista</h1></header>
+
+        <form id="todo-form">
+            <p>Adicione uma tarefa:</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Digite uma tarefa">
+                <button type="submit">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </form>
+
+    
+        <div id="filter">
+            <h4>Filtrar:</h4>
+            <select id="filter-select" onchange="filterTodos(this.value)">
+                <option value="all" class="icon-todos">Todos</option>
+                <option value="done" class="icon-done">Feitos</option>
+                <option value="todo" class="icon-todo">A fazer</option>
+            </select>
+        </div>
+
+        <ul id="todo-list"></ul>
+    </div>
+</body>
+</html>

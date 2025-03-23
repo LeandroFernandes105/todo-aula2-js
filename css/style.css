@@ -1,0 +1,155 @@
+/* Regras globais */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+  color: #444;
+}
+
+body {
+  background-image: url("https://media.istockphoto.com/id/1304684103/pt/foto/lined-notebook-paper-for-background.jpg?s=612x612&w=0&k=20&c=devI-1imM4Ssol9V3s-rkdvIq93It3goYFpYm_itCxA=");
+  background-position: center;
+  background-size: cover;
+}
+
+button {
+  background-color: #41fc41;
+  color: #0a7e00;
+  border: 2px solid #004918;
+  padding: 0.20rem 0.40rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+}
+
+button:hover {
+  background-color: #791ad1;
+  color: #e6f7ff;
+}
+
+button:hover > i {
+  color: #e6f7ff;
+}
+
+button i {
+  pointer-events: none;
+  color: #bd1ce6;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 0.20rem 0.40rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.hide {
+  display: none;
+}
+
+/* Todo header */
+.todo-container {
+  max-width: 450px;
+  margin: 3rem auto ;
+  background-color: #fff9f9;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.todo-container header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #fcfbfb;
+}
+
+/* Form */
+#todo-form,
+#edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#todo-form p,
+#edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-control input {
+  margin-right: 0.5rem;
+}
+
+
+#toolbar {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+}
+
+
+
+
+
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+}
+
+/* Ajustes para os filtros */
+#filter-select {
+  font-size: 16px;
+  padding-left: 25px; /* Espaço para o ícone */
+}
+
+/* Ícones dentro das opções */
+.icon-todos::before {
+  content: "\f0c9"; /* Código do ícone 'fa-thin fa-list' */
+  font-family: "Font Awesome 5 Free";
+}
+
+.icon-done::before {
+  content: "\f00c"; /* Código do ícone 'fa-thin fa-check' */
+  font-family: "Font Awesome 5 Free";
+}
+
+.icon-todo::before {
+  content: "\f2d1"; /* Código do ícone 'fa-thin fa-hourglass' */
+  font-family: "Font Awesome 5 Free";
+}
+
+
+
+/* Estilo para as tarefas */
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; 
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.todo button {
+  margin-left: 0.5rem;
+}
