@@ -1,7 +1,7 @@
 ﻿# todo-aula2-js
 # Todo List
 
-Este é um projeto simples de **Lista de Tarefas (Todo List)** utilizando **HTML**, **CSS** e **JavaScript**. Ele permite ao usuário adicionar, excluir e marcar tarefas como concluídas, com a possibilidade de filtrar as tarefas por status (Todos, Feitos ou A Fazer).
+Este é um projeto de **Lista de Tarefas (Todo List)** utilizando **HTML**, **CSS** e **JavaScript**. Ele permite ao usuário adicionar, excluir e marcar tarefas como concluídas, com a possibilidade de filtrar as tarefas por status (Todos, Feitos ou A Fazer).
 
 ## Funcionalidades
 
